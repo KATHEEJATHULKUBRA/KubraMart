@@ -9,11 +9,12 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="img/martlogo.png" rel="icon">
+  <link href="/logo.png" rel="icon">
   <link href="img/martlogo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
@@ -34,8 +35,14 @@
       list-style: none;
     }
 
+    .logomart img {
+      width: 230px;
+      height: 68px;
+      object-fit: cover;
+    }
+
     .ulli i {
-      color: #009961;
+      color: #b37fa3;
     }
 
     .imagefaq {
@@ -54,7 +61,7 @@
 
     /* Footer */
     footer {
-      background: #222;
+      background: black;
       color: white;
       padding: 40px 0;
       font-size: 14px;
@@ -79,7 +86,7 @@
       margin-bottom: 15px;
       text-align: center;
       font-size: 22px;
-      color: #009860;
+      color: #b37fa3;
     }
 
     .footer-section ul {
@@ -101,7 +108,7 @@
     }
 
     .footer-section ul li a:hover {
-      color: #1c7839;
+      color: #b27ea2;
     }
 
     /* Social Media Icons */
@@ -113,7 +120,7 @@
 
     .social-icons a {
       display: inline-block;
-      background: #009860;
+      background: #6b2d56;
       color: white;
       width: 35px;
       height: 35px;
@@ -125,7 +132,7 @@
     }
 
     .social-icons a:hover {
-      background: #06d19c;
+      background: #b27ea2;
       color: white;
     }
 
@@ -143,7 +150,7 @@
     }
 
     .footer-section button {
-      background: #009860;
+      background: #6b2d56;
       color: white;
       border: none;
       padding: 8px 15px;
@@ -153,7 +160,7 @@
     }
 
     .footer-section button:hover {
-      background: #06d19c;
+      background: #b27ea2;
     }
 
     /* Footer Bottom */
@@ -180,6 +187,76 @@
       border: 0;
       border-radius: 10px;
     }
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .criteria-item {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .criteria-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .criteria-heading {
+      text-align: left;
+      color: hsl(326.05deg 48.1% 30.98%);
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+    .criteria-box {
+      display: flex;
+      align-items: center;
+      background: #ffffff;
+      border-left: 5px solid hsl(326.05deg 48.1% 30.98%);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .criteria-box:hover {
+      transform: translateX(5px);
+    }
+
+    .icon {
+      font-size: 24px;
+      color: hsl(326.05deg 48.1% 30.98%);
+      width: 50px;
+      text-align: center;
+    }
+
+    .criteria-text {
+      flex: 1;
+    }
+
+    .criteria-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .criteria-desc {
+      font-size: 15px;
+      color: #666;
+    }
+
+    .i {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .i1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.6rem;
+    }
   </style>
 
 </head>
@@ -191,8 +268,11 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">KubraMart</h1>
+        <div class="logomart">
+          <img src="/logo.png" alt="">
+        </div>
+
+        <!-- <h1 class="sitename">KubraMart</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -201,7 +281,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Explore</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#recent-posts">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -219,14 +298,14 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="img/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="overlay.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center text-center">
         <h2 data-aos="fade-up" data-aos-delay="100">A Marketplace for Women, by Women.</h2>
         <p data-aos="fade-up" data-aos-delay="200">KubraMart is dedicated to supporting and uplifting women
           entrepreneurs by providing them with the perfect retail spaces to grow their businesses.</p>
         <div data-aos="fade-up" data-aos-delay="300">
-          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          <a href="./index.html" class="glightbox pulsating-play-btn"></a>
         </div>
         <div class="buttons">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo9UIEVpaQEb0wIPZVK91HyoW0plkZc_Guaj6pjHN1O8dt9g/viewform?usp=sharing"
@@ -255,26 +334,35 @@
 
 
             <ul>
-              <li><i class="bi bi-check2-circle"></i> <span> KubraMart is a transformative initiative by Ambur Muslim
+              <li><span><i class="bi bi-check2-circle "></i> </span>
+                <p> KubraMart is a transformative initiative by Ambur Muslim
                   Education Society (AMES), committed to empowering
                   women by providing them with a dedicated platform to start and grow their own businesses.
                   Understanding
                   the challenges women face in launching their careers, AMES has developed a women-exclusive shop
                   complex
                   featuring 10 subsidized rental spaces, offering aspiring female entrepreneurs the opportunity to build
-                  sustainable businesses.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span> At KubraMart, women can establish businesses in food,
+                  sustainable businesses</p>
+              </li>
+              <li><span><i class="bi bi-check2-circle "></i> </span>
+                <p>At KubraMart, women can establish businesses in
+                  food,
                   fashion, tailoring, beauty, and other essential services, catering exclusively to female customers.
                   This initiative promotes financial independence, community growth, and skill development, ensuring
-                  that women have a safe, inclusive, and supportive space to thrive and succeed.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span> Through KubraMart, AMES envisions a future where women-led
+                  that women have a safe, inclusive, and supportive space to thrive and succeed.</p>
+              </li>
+              <li><span><i class="bi bi-check2-circle "></i></span>
+                <p> Through KubraMart, AMES envisions a future where
+                  women-led
                   businesses flourish, turning ambition into success and making a meaningful impact on the local
-                  economy.</span></li>
+                  economy.</p>
+              </li>
             </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>
+
+            <p style="line-height: 30px;">
               By creating dedicated spaces like KubraMart, we ensure a
               safer, more inclusive, and empowering business environment, where women can confidently pursue their
               entrepreneurial dreams.
@@ -293,109 +381,76 @@
     <section id="services" class="services section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title" id="padding" data-aos="fade-up">
         <h2> Explore Business</h2>
-        <p>Eligibility Criteria for KubraMart</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Women Entrepreneurs Only </h3>
-              </a>
-              <p> The applicant must be a woman interested in starting or expanding a business.
-              </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Age Requirement</h3>
-              </a>
-              <p>Must be 18 years or older.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Residency Preference</h3>
-              </a>
-              <p>Priority may be given to local residents.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Financial Need & Motivation</h3>
-              </a>
-              <p>Preference for needy women, widows, and those with a strong business plan and motivation.
-              </p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3> Business Plan Submission</h3>
-              </a>
-              <p>Preference for needy women, widows, and those with a strong business plan and motivation.
-              </p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Adherence to Guidelines</h3>
-              </a>
-              <p>All applicants must follow KubraMart’s rules and maintain a professional work environment</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Required Documents</h3>
-              </a>
-              <p>Applicants must provide valid ID proof and supporting business documents.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
 
       </div>
+
+
+      <section class="criteria-container" id="eligibility-section">
+        <h2 class="criteria-heading">Eligibility Criteria for KubraMart</h2>
+
+        <div class="criteria-box">
+          <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+          <div class="criteria-text">
+            <div class="criteria-title">Women Entrepreneurs Only</div>
+            <div class="criteria-desc">The applicant must be a woman interested in starting or expanding a business.
+            </div>
+          </div>
+        </div>
+
+        <div class="criteria-box">
+          <div class="icon"><i class="fas fa-birthday-cake"></i></div>
+          <div class="criteria-text">
+            <div class="criteria-title">Age Requirement</div>
+            <div class="criteria-desc">Must be 18 years or older.</div>
+          </div>
+        </div>
+
+        <div class="criteria-box">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="criteria-text">
+            <div class="criteria-title">Residency Preference</div>
+            <div class="criteria-desc">Priority may be given to local residents.</div>
+          </div>
+        </div>
+
+        <div class="criteria-box">
+          <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="criteria-text">
+            <div class="criteria-title">Financial Need & Motivation</div>
+            <div class="criteria-desc">Preference for needy women, widows, and those with a strong business plan.</div>
+          </div>
+        </div>
+
+        <div class="criteria-box">
+          <div class="icon"><i class="fas fa-file-alt"></i></div>
+          <div class="criteria-text">
+            <div class="criteria-title">Business Plan Submission</div>
+            <div class="criteria-desc">A clear proposal outlining the business idea and expected revenue must be
+              submitted.</div>
+          </div>
+        </div>
+
+        <div class="criteria-box">
+          <div class="icon"><i class="fas fa-check-circle"></i></div>
+          <div class="criteria-text">
+            <div class="criteria-title">Adherence to Guidelines</div>
+            <div class="criteria-desc">All applicants must follow KubraMart’s rules and maintain a professional work
+              environment.</div>
+          </div>
+        </div>
+
+        <div class="criteria-box">
+          <div class="icon"><i class="fas fa-id-card"></i></div>
+          <div class="criteria-text">
+            <div class="criteria-title">Required Documents</div>
+            <div class="criteria-desc">Applicants must provide valid ID proof and supporting business documents.</div>
+          </div>
+        </div>
+
+      </section>
+
 
     </section><!-- /Services Section -->
 
@@ -415,27 +470,30 @@
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative h3style">
-              <a href="#" class="stretched-link">
-                <h3> Business Operations</h3>
+            <div class="service-item position-relative h3style text-center">
+              <a href="#" class="stretched-link text-decoration-none d-flex flex-column align-items-center">
+                <i class="fas fa-money-bill-wave icon i"></i>
+                <h3 class="mb-3">Business Operations</h3>
               </a>
-              <ul class="ulli">
+              <ul class="ulli text-start">
                 <li><i class="bi bi-check2-circle"></i> <span> Shops must be operated by women and cater exclusively to
                     women customers. </span></li>
                 <li><i class="bi bi-check2-circle"></i> <span> Business hours should align with KubraMart's operational
                     timings. </span></li>
-                <li><i class="bi bi-check2-circle"></i> <span>Shop owners must actively run their business and avoid
+                <li><i class="bi bi-check2-circle"></i> <span> Shop owners must actively run their business and avoid
                     keeping the space idle. </span></li>
               </ul>
             </div>
           </div><!-- End Service Item -->
 
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative h3style">
-              <a href="#" class="stretched-link">
+            <div class="service-item  position-relative h3style text-center">
+              <a href="#" class="stretched-link text-decoration-none d-flex flex-column align-items-center">
+                <i class="fas fa-handshake icon i"></i>
                 <h3> Conduct & Discipline</h3>
               </a>
-              <ul class="ulli">
+              <ul class="ulli text-start">
                 <li><i class="bi bi-check2-circle"></i> <span> Maintain a respectful and professional atmosphere.
                   </span></li>
                 <li><i class="bi bi-check2-circle"></i> <span> No unauthorized subletting or transfer of shop
@@ -447,11 +505,12 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative h3style">
-              <a href="#" class="stretched-link">
+            <div class="service-item  position-relative h3style text-center">
+              <a href="#" class="stretched-link text-decoration-none d-flex flex-column align-items-center ">
+                <i class="fas fa-id-card i1"></i>
                 <h3> Payment & Rental Terms</h3>
               </a>
-              <ul class="ulli">
+              <ul class="ulli text-start">
                 <li><i class="bi bi-check2-circle"></i> <span> Rent must be paid on time as per the agreed terms.
                   </span></li>
                 <li><i class="bi bi-check2-circle"></i> <span> Late payments may result in penalties or cancellation of
@@ -462,11 +521,12 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative h3style">
-              <a href="#" class="stretched-link">
+            <div class="service-item  position-relative h3style text-center">
+              <a href="#" class="stretched-link text-decoration-none d-flex flex-column align-items-center ">
+                <i class="fas fa-gavel icon i"></i>
                 <h3> Compliance & Regulations</h3>
               </a>
-              <ul class="ulli">
+              <ul class="ulli text-start">
                 <li><i class="bi bi-check2-circle"></i> <span> All businesses must operate legally and comply with local
                     regulations.
                   </span></li>
@@ -479,11 +539,12 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative h3style">
-              <a href="#" class="stretched-link">
+            <div class="service-item  position-relative h3style text-center">
+              <a href="#" class="stretched-link text-decoration-none d-flex flex-column align-items-center ">
+                <i class="fas fa-users icon i"></i>
                 <h3> Participation & Growth</h3>
               </a>
-              <ul class="ulli">
+              <ul class="ulli text-start">
                 <li><i class="bi bi-check2-circle"></i> <span>Shop owners are encouraged to participate in training and
                     mentorship programs.
                   </span></li>
@@ -495,11 +556,12 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative h3style">
-              <a href="#" class="stretched-link">
+            <div class="service-item  position-relative h3style text-center">
+              <a href="#" class="stretched-link text-decoration-none d-flex flex-column align-items-center">
+                <i class="fas fa-exclamation-triangle icon i"></i>
                 <h3> Violation & Consequences</h3>
               </a>
-              <ul class="ulli">
+              <ul class="ulli text-start">
                 <li><i class="bi bi-check2-circle"></i> <span> Failure to comply with these guidelines may result in
                     warnings, penalties, or termination of the rental agreement.
                   </span></li>
@@ -507,14 +569,6 @@
               </ul>
             </div>
           </div><!-- End Service Item -->
-
-
-
-
-
-
-
-
 
         </div>
 
@@ -664,7 +718,7 @@
                 <h3>How can I contact KubraMart for more details?
                 </h3>
                 <div class="faq-content">
-                  <p>
+
                   <ul class="ulli">
                     <li> <span>For any inquiries, you can reach out to us through:
                       </span></li>
@@ -675,7 +729,7 @@
                     </li>
 
                   </ul>
-                  </p>
+
 
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -695,102 +749,6 @@
 
     </section><!-- /Faq Section -->
 
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2> Blog Posts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div class="post-img">
-                <img src="/img/img/blog/blog-1.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="/img/img/blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/img/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article>
-
-              <div class="post-img">
-                <img src="/img/img/blog/blog-2.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/img/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-
-              <div class="post-img">
-                <img src="/img/img/blog/blog-3.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/img/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
@@ -798,7 +756,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade" data-aos-delay="100">
@@ -833,8 +790,8 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
+            <form action="https://formsubmit.co/usama@aspirasys.com" method="POST"
+              class="php-email-form " data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -864,7 +821,7 @@
               </div>
             </form>
           </div><!-- End Contact Form -->
-         
+
           <div class="container section-title" data-aos="fade-up">
             <h2>Kubramart Location</h2>
           </div>
@@ -891,11 +848,11 @@
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Shops</a></li>
-          <li><a href="#">Apply</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Explore</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
@@ -903,10 +860,10 @@
       <div class="footer-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/login"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
 
@@ -923,8 +880,8 @@
       <div class="footer-section">
         <h3>Legal</h3>
         <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="/policy.html">Privacy Policy</a></li>
+          <li><a href="/service.html">Terms of Service</a></li>
         </ul>
       </div>
     </div>

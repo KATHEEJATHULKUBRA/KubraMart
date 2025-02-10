@@ -25,7 +25,7 @@
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #282828;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #009961;
+  --accent-color: #6b2d56;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -37,7 +37,7 @@
 :root {
   --nav-color: #ffffff;
   /* The default color of the main navmenu links */
-  --nav-hover-color: #009961;
+  --nav-hover-color: #6b2d56;
   /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff;
   /* Used as the background color for mobile navigation menu */
@@ -45,7 +45,7 @@
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #009961;
+  --nav-dropdown-hover-color: #6b2d56;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -193,7 +193,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: #663154;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -234,11 +234,8 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0);
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: black;
   padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -363,7 +360,7 @@ h6 {
     height: 2px;
     bottom: -27px;
     left: 0;
-    background-color: var(--nav-hover-color);
+    background-color: #663154;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -781,6 +778,9 @@ section,
   padding-bottom: 60px;
   position: relative;
 }
+#padding{
+  padding-bottom: 0;
+}
 
 .section-title h2 {
   font-size: 32px;
@@ -898,17 +898,24 @@ section,
 }
 
 .about ul li {
-  padding-bottom: 5px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.about ul li p {
+  margin: 0;
 }
 
 .about ul i {
   font-size: 20px;
   justify-content: flex-start;
   padding-right: 4px;
+  flex-shrink: 0;
   color: var(--accent-color);
 }
+
 
 .about .read-more {
   background: var(--accent-color);
@@ -953,8 +960,8 @@ section,
   height: 100%;
 }
 
-.h3style h3{
-   color: #009961;
+.h3style h3 {
+  color: #663154;
 }
 
 .services .service-item .icon {
@@ -1056,6 +1063,11 @@ section,
   overflow: hidden;
 }
 
+.faq .faq-container .faq-item .faq-content ul {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
 .faq .faq-container .faq-item .faq-icon {
   position: absolute;
   top: 22px;
@@ -1096,67 +1108,11 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Recent Posts Section
---------------------------------------------------------------*/
-.recent-posts article {
-  background: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.recent-posts .post-img {
-  max-height: 240px;
-  margin: -30px -30px 15px -30px;
-  overflow: hidden;
-}
-
-.recent-posts .post-category {
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin-bottom: 10px;
-}
-
-.recent-posts .title {
-  font-size: 20px;
-  font-weight: 700;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-
-.recent-posts .title a {
-  color: var(--heading-color);
-  transition: 0.3s;
-}
-
-.recent-posts .title a:hover {
-  color: var(--accent-color);
-}
-
-.recent-posts .post-author-img {
-  width: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.recent-posts .post-author {
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.recent-posts .post-date {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
+ .contact .info-item+.info-item {
   margin-top: 40px;
 }
 
@@ -1231,7 +1187,4 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
-
-
-
+} 
