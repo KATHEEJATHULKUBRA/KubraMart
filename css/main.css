@@ -953,6 +953,7 @@ section,
   padding: 60px 30px;
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
+  line-height: 2;
   border-bottom: 5px solid var(--surface-color);
   height: 100%;
 }
