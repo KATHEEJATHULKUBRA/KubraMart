@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan QR to Pay Rent</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        #qrcode {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Scan the QR Code to Pay Rent</h2>
+    <div id="qrcode"></div>
+    <script>
+        const paymentURL = "https://yourpaymentgateway.com/pay?amount=1000&currency=USD";
+        new QRCode(document.getElementById("qrcode"), {
+            text: paymentURL,
+            width: 200,
+            height: 200
+        });
+    </script>
+</body>
+
+</html>

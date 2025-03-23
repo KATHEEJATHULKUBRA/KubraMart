@@ -31,9 +31,14 @@
 
   <!-- Main CSS File -->
   <link href="/css/main.css" rel="stylesheet">
+
   <style>
     .ulli {
       list-style: none;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     .logomart img {
@@ -49,8 +54,16 @@
 
     }
 
+    .image img {
+      height: 200px;
+      width: -webkit-fill-available;
+      border-radius: 10px;
+      object-fit: cover;
+      margin: auto;
+    }
+
     .ulli li {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .imagefaq {
@@ -196,6 +209,11 @@
       border-radius: 10px;
     }
 
+    .icons i {
+      color: #6b2d56;
+      font-size: 23.5px;
+    }
+
 
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -211,7 +229,7 @@
     }
 
     .criteria-heading {
-      text-align: left;
+      text-align: center;
       color: hsl(326.05deg 48.1% 30.98%);
       font-size: 28px;
       font-weight: bold;
@@ -264,12 +282,22 @@
     .i1 {
       font-size: 3.5rem;
       margin-bottom: 1.6rem;
+      color: #6b2d56;
     }
 
     .para {
       line-height: 30px;
       font-size: 17px;
       width: 100%;
+    }
+
+    .service-item .content p {
+      font-size: 16px;
+      color: inherit;
+      /* letter-spacing: 1px; */
+      margin-top: 10px;
+      margin-bottom: 20px;
+
     }
   </style>
 
@@ -293,15 +321,21 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Explore</a></li>
+          <li><a href="#guidelines">Guidelines</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfo9UIEVpaQEb0wIPZVK91HyoW0plkZc_Guaj6pjHN1O8dt9g/viewform?usp=sharing">Apply
-        Shop</a>
+      <!-- <a class="cta-btn"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfo9UIEVpaQEb0wIPZVK91HyoW0plkZc_Guaj6pjHN1O8dt9g/viewform?usp=sharing">Pay
+        Rent
+      </a>  -->
+
+      <a class="cta-btn" href="/qrpage.html">Pay
+        Rent
+      </a>
 
     </div>
   </header>
@@ -311,7 +345,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="/banner.png" alt="" data-aos="fade-in">
+      <img src="/hero.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center text-center">
         <h2 data-aos="fade-up" data-aos-delay="100">A Marketplace for Women, by Women.</h2>
@@ -379,7 +413,7 @@
               entrepreneurial dreams.
 
             </p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#contact" class="read-more"><span>Contact Us</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
         </div>
@@ -394,12 +428,302 @@
       <!-- Section Title -->
       <div class="container section-title" id="padding" data-aos="fade-up">
         <h2> Explore Business</h2>
+        <p>Shop Details of Kubra Market</p>
 
       </div>
 
+      <div class="container">
 
-      <section class="criteria-container" id="eligibility-section">
-        <h2 class="criteria-heading">Eligibility Criteria for Kubra Market</h2>
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative h3style text-center">
+              <div class="image">
+                <img src="/thaibah.jpg" alt="" srcset="">
+              </div>
+              <div class="now">
+                <h3 class="mb-3">Thaibah Enterprises</h3>
+                <h5>Shop Owner - Seemin Shakir</h5>
+                <p>Crockery,Hajj-Umrah kit,Dubai Abayas</p>
+
+              </div>
+              <div class="content">
+                <p>We sell imported crockery with top notch quality,
+                  additionally we have hajj/umrah
+                  kit , dubai abayas and nighties.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/thaibah_enterprises?igsh=MTMybGs4ZzdldGRnMA%3D%3D"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/9940951662" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+
+            </div>
+          </div><!-- End Service Item -->
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/minha.jpg" alt="" srcset="">
+              </div>
+              <div class="now">
+                <h3 class="mb-3">Minha Zainab Enterprises</h3>
+                <h5>Shop Owner - Shariba kouser</h5>
+                <p>Home utilities</p>
+
+              </div>
+              <div class="content">
+                <p>Cleaning and household essentials, including buckets, mops, brooms, mats, door mats, phenyl,
+                  container boxes, jugs, water bottles, and more.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/minhazainabenterprises/"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/6379652450" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:aneesshari75@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/haya.jpg" alt="" srcset="">
+              </div>
+
+              <div class="now">
+                <h3 class="mb-3">Haya Boutique</h3>
+                <h5>Shop Owner - Sufiya naaz</h5>
+                <p> Bhurqa,Hijab,Slippers.</p>
+
+              </div>
+              <div class="content">
+                <p>Modest wear and accessories, including burqas, hijabs, slippers, and fancy items.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/mr__mrs__sufihabeeb/"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/7305185798" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:habeebsufi0606@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/crescent.jpg" alt="" srcset="">
+              </div>
+              <div class="now">
+                <h3 class="mb-3">Crescent Fashion</h3>
+                <h5>Shop Owner - Shereen Afshan</h5>
+                <p>Home Decor,Cosmetics,Imported laces, Accessories,Clothing</p>
+
+              </div>
+              <div class="content">
+                <p>A collection of home décor, imported laces, imitation jewelry, accessories, innerwear, nightwear,
+                  cosmetics, handbags, organic products, and clothing.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/crescentsouq7/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/9791010349" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:crescentfashionambur@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/food.jpg" alt="" srcset="">
+              </div>
+              <div class="now">
+                <h3 class="mb-3">Food Court</h3>
+                <h5>Shop Owner - Lorem, ipsum</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+
+              </div>
+              <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero sunt autem quisquam.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:example@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/ayisha.jpg" alt="" srcset="">
+              </div>
+              <div class="now">
+                <h3 class="mb-3">Ayisha Silk House</h3>
+                <h5>Shop Owner - NAZIMA TABASSUM</h5>
+                <p>Clothing,Fashion outlet,Boutique,Apparel </p>
+
+              </div>
+              <div class="content">
+                <p>Ayisha Silk House has offered stylish and authentic daily, party, and ethnic wear since 2005. We
+                  provide quality clothing at affordable prices with unique, limited-edition exclusives.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/ayishasilkhouse/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/9500633924" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:ayishasilkhouse@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/todlerry.jpg" alt="" srcset="">
+              </div>
+
+              <div class="now">
+                <h3 class="mb-3">Todlerry</h3>
+                <h5>Shop Owner - Naseema S</h5>
+                <p>Fashion, Kids Fashion, Clothing, Accessories, Baby care</p>
+
+              </div>
+              <div class="content">
+                <p>Todlerry offers trendy, soft, and stylish cotton outfits for newborns to 8-year-olds, ensuring
+                  comfort and charm with a vibrant range from rompers to dungarees.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/todlerryindia"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/8667221879" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:todlerry@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.todlerry.in/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/al-aimans.jpg" alt="" srcset="">
+              </div>
+
+              <div class="now">
+                <h3 class="mb-3">Al-Aiman Creation</h3>
+                <h5>Shop Owner - Saadath Shaheen</h5>
+                <p>Packing materials and traditional food</p>
+
+              </div>
+              <div class="content">
+                <p>All types of packing materials for engagement,Birthday and wedding functions and also order for
+                  traditional food.</p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/9566563621" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:mohammadzain1919@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative h3style text-center">
+              <div class="image">
+                <img src="/boy's.jpg" alt="" srcset="">
+              </div>
+
+              <div class="now">
+                <h3 class="mb-3">Girl's & Boy's</h3>
+                <h5>Shop Owner - Shaziya kouser</h5>
+                <p>Boutique specializing in Girls’ and Boys’ Apparel</p>
+
+              </div>
+              <div class="content">
+                <p>Girls and Boys brings trendy and comfy clothing for kids (0-15), from ethnic to nightwear. Our
+                  women's collection features stylish outerwear and premium undergarments for every occasion.
+                </p>
+              </div>
+
+              <div class="icons d-flex justify-content-evenly">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/9361930730 " target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:example@gmail.com?subject=Hello&body=I want to contact you!">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Eligibility Criteria for Kubra Market</h2>
+      </div><!-- End Section Title -->
+
+      <section class="criteria-container" id="eligibility-section" data-aos="fade-up">
+        <!-- <h2 class="criteria-heading">Eligibility Criteria for Kubra Market</h2> -->
 
         <div class="criteria-box">
           <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
@@ -430,7 +754,8 @@
           <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
           <div class="criteria-text">
             <div class="criteria-title">Financial Need & Motivation</div>
-            <div class="criteria-desc">Preference for needy women, widows, and those with a strong business plan.</div>
+            <div class="criteria-desc">Preference for needy women, widows, and those with a strong business plan.
+            </div>
           </div>
         </div>
 
@@ -447,7 +772,8 @@
           <div class="icon"><i class="fas fa-check-circle"></i></div>
           <div class="criteria-text">
             <div class="criteria-title">Adherence to Guidelines</div>
-            <div class="criteria-desc">All applicants must follow Kubra Market’s rules and maintain a professional work
+            <div class="criteria-desc">All applicants must follow Kubra Market’s rules and maintain a professional
+              work
               environment.</div>
           </div>
         </div>
@@ -462,11 +788,10 @@
 
       </section>
 
-
-    </section><!-- /Services Section -->
+    </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="guidelines" class="services section ">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -632,9 +957,10 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>How can I apply for a shop?</h3>
                 <div class="faq-content">
-                  <p>You can apply by filling out the rental application form on our website, providing details about
-                    your business, experience, and required documents. Applications will be reviewed, and eligible
-                    candidates will be contacted for further steps.</p>
+                  <p>Contact us to check shop availability. If a shop is available, you can apply by submitting a rental
+                    application form on our website, including details about your business, experience, and required
+                    documents. Applications will be reviewed, and shortlisted candidates will be contacted for the next
+                    steps.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -654,15 +980,13 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>What types of businesses are allowed in Kubra Market?</h3>
                 <div class="faq-content">
-
                   <ul class="ulli">
-                    <li> <span>Businesses that cater exclusively to women are allowed. This includes but is not limited
+                    <li> <span> Businesses that cater exclusively to women are allowed. This includes but is not limited
                         to:
                       </span></li>
                     <li><i class="bi bi-check2-circle"></i> <span> Eatery & Cafés</span></li>
                     <li><i class="bi bi-check2-circle"></i> <span>Apparel & Fashion Boutiques</span></li>
                     <li><i class="bi bi-check2-circle"></i> <span>Beauty Parlors & Salons</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Tailoring & Stitching Services</span></li>
                     <li><i class="bi bi-check2-circle"></i> <span>Handmade Products & Accessories</span></li>
                   </ul>
                 </div>
@@ -704,8 +1028,8 @@
                 </h3>
                 <div class="faq-content">
                   <p>
-                    Yes, each shop is leased for a fixed period, typically six months to one year, with an option for
-                    renewal based on business performance and availability.</p>
+                    Each shop is leased without a fixed time limit, allowing tenants to continue their business as long
+                    as they meet performance requirements and space remains available.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -736,7 +1060,7 @@
                     <li><i class="bi bi-check2-circle"></i> <span>📍Visit Us: Kubra Women's Market
                         Jalal Road Ambur. </span></li>
                     <li><i class="bi bi-check2-circle"></i> <span>📞 Call Us: +91 94433 20313 </span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>📧 Email: kubramart@gmail.com </span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>📧 Email: kubramarket@gmail.com </span></li>
 
 
                   </ul>
@@ -799,14 +1123,14 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>kubramart@gmail.com </p>
+                <p>kubramarket@gmail.com </p>
               </div>
             </div><!-- End Info Item -->
 
           </div>
 
           <div class="col-lg-8">
-            <form action="https://formsubmit.co/kubramart@gmail.com" method="POST" class="php-email-form "
+            <form action="https://formsubmit.co/kubramarket@gmail.com" method="POST" class="php-email-form "
               data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
@@ -887,7 +1211,7 @@
       <!-- Newsletter Signup -->
       <div class="footer-section">
         <h3>Newsletter</h3>
-        <form action="mailto:kubramart@gmail.com" method="POST" enctype="text/plain">
+        <form action="mailto:kubramarket@gmail.com" method="POST" enctype="text/plain">
           <input type="email" name="email" placeholder="Enter your email" required>
           <button type="submit">Subscribe</button>
         </form>

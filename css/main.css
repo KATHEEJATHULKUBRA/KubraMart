@@ -615,9 +615,9 @@ section,
   position: relative;
 }
 
-#padding {
+/* #padding {
   padding-bottom: 0;
-}
+} */
 
 .section-title h2 {
   font-size: 32px;
@@ -642,6 +642,11 @@ section,
 .section-title p {
   margin-bottom: 0;
   color: color-mix(in srgb, var(--default-color) 90%, white 50%);
+}
+
+.now p {
+  color: gray;
+  /* letter-spacing: 1.5px; */
 }
 
 /*--------------------------------------------------------------
@@ -794,14 +799,17 @@ section,
   padding: 60px 30px;
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
-  line-height: 2;
+  line-height: 1.5;
   border-bottom: 5px solid var(--surface-color);
   height: 100%;
 }
 
 .h3style h3 {
   color: #663154;
+  /* letter-spacing: 1px; */
 }
+
+
 
 .services .service-item .icon {
   color: var(--contrast-color);
