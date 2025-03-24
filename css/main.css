@@ -644,7 +644,7 @@ section,
   color: color-mix(in srgb, var(--default-color) 90%, white 50%);
 }
 
-.now p {
+.now h6 {
   color: gray;
   /* letter-spacing: 1.5px; */
 }
@@ -806,7 +806,6 @@ section,
 
 .h3style h3 {
   color: #663154;
-  /* letter-spacing: 1px; */
 }
 
 
